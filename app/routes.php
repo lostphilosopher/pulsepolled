@@ -31,10 +31,13 @@ Route::get('test/{feature?}', function($feature = 'db')
 		    $database   = $mongo->$dbName;
 		    $collection = $database->access;
 		    // Insert a document into the access collection
-		    $visit = array( 'ip' => $_SERVER['HTTP_X_FORWARDED_FOR'] );
+		    $visit = array('ip' => $_SERVER['HTTP_X_FORWARDED_FOR']);
 		    $collection->insert($visit);
 		    // Print all the existing documents
 		    $views = $collection->find();
+
+		    dd($views);
+
 		    // Close / Disconnect the MongoDB connection
 		    $mongo->close();
 
