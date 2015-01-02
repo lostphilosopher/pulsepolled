@@ -26,7 +26,9 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+    # jenssegers/laravel-mongodb
+    # https://github.com/jenssegers/laravel-mongodb
+	'default' => 'mongodb',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -45,6 +47,17 @@ return array(
 	*/
 
 	'connections' => array(
+
+        # jenssegers/laravel-mongodb
+        # https://github.com/jenssegers/laravel-mongodb
+        'mongodb' => array(
+            'driver'   => 'mongodb',
+            'host'     => 'localhost',
+            'port'     => 27017,
+            'username' => $_ENV['MONGOLAB_ADMIN_USERNAME'],
+            'password' => $_ENV['MONGOLAB_ADMIN_PASSWORD'],
+            'database' => 'pulsepolled'
+        ),    
 
 		'sqlite' => array(
 			'driver'   => 'sqlite',
