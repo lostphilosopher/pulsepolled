@@ -15,3 +15,14 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('test/{feature?}', function($feature = 'db')
+{
+    switch ($feature) {
+        case 'db':
+            return View::make('test.db');
+            break;
+        default:
+            return View::make('hello');    
+    }    
+});
