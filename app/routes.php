@@ -20,7 +20,7 @@ Route::get('test/{feature?}', function($feature = 'db')
 {
     switch ($feature) {
         case 'db':
-            return View::make('test.db');
+            return View::make('tests.db');
             break;
         default:
             return View::make('hello');    
