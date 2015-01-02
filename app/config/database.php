@@ -54,8 +54,8 @@ return array(
             'driver'   => 'mongodb',
             'host'     => 'localhost',
             'port'     => 27017,
-            'username' => $_ENV['MONGOLAB_ADMIN_USERNAME'],
-            'password' => $_ENV['MONGOLAB_ADMIN_PASSWORD'],
+            'username' => getenv('MONGOLAB_ADMIN_USERNAME'),
+            'password' => getenv('MONGOLAB_ADMIN_PASSWORD'),
             'database' => 'pulsepolled'
         ),    
 
