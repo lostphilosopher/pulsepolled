@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
+		"ext-mongo": "*",
 		"laravel/framework": "4.2.*",
 		"jenssegers/mongodb": "*"
 	},
