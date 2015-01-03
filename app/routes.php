@@ -27,7 +27,7 @@ Route::get('test/{feature?}', function($feature = 'db')
 		    $mongoUri   = parse_url(getenv('MONGOLAB_URI'));
 		    $dbName     = str_replace('/', '', $mongoUri['path']);
 		    // Connect to mongoDB instance and access the access collection
-		    $mongo      = new Mongo(getenv('MONGOLAB_URI'));
+		    $mongo      = new MongoClient(getenv('MONGOLAB_URI'));
 		    $database   = $mongo->$dbName;
 		    $collection = $database->access;
 		    // Insert a document into the access collection
