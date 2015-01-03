@@ -36,8 +36,6 @@ Route::get('test/{feature?}', function($feature = 'db')
 		    // Print all the existing documents
 		    $views = $collection->find();
 
-		    dd($views);
-
 		    // Close / Disconnect the MongoDB connection
 		    $mongo->close();
 
