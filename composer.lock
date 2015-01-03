@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8f14ac9adf8d655b93132652cc166e7a",
+    "hash": "1d43e40e15106213a6fdf895178970bb",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -188,64 +188,6 @@
             "time": "2014-11-20 16:49:30"
         },
         {
-            "name": "jenssegers/mongodb",
-            "version": "v2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jenssegers/laravel-mongodb.git",
-                "reference": "160096c4f01f300d08f8b4c2d1b295be07d74b44"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jenssegers/laravel-mongodb/zipball/160096c4f01f300d08f8b4c2d1b295be07d74b44",
-                "reference": "160096c4f01f300d08f8b4c2d1b295be07d74b44",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/container": "4.2.*",
-                "illuminate/database": "4.2.*",
-                "illuminate/events": "4.2.*",
-                "illuminate/support": "4.2.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "*",
-                "orchestra/testbench": "2.2.*",
-                "satooshi/php-coveralls": "*"
-            },
-            "suggest": {
-                "jenssegers/mongodb-sentry": "Add Sentry support to Laravel-MongoDB",
-                "jenssegers/mongodb-session": "Add MongoDB session support to Laravel-MongoDB"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Jenssegers\\Mongodb": "src/",
-                    "Jenssegers\\Eloquent": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jens Segers",
-                    "homepage": "http://jenssegers.be"
-                }
-            ],
-            "description": "A MongoDB based Eloquent model and Query builder for Laravel 4",
-            "keywords": [
-                "database",
-                "eloquent",
-                "laravel",
-                "model",
-                "mongo",
-                "mongodb"
-            ],
-            "time": "2014-09-16 10:50:01"
-        },
-        {
             "name": "jeremeamia/SuperClosure",
             "version": "1.0.1",
             "source": {
@@ -407,6 +349,39 @@
                 "laravel"
             ],
             "time": "2014-12-22 20:56:10"
+        },
+        {
+            "name": "lostphilosopher/mongolab-lite-utils",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lostphilosopher/mongolab-lite-utils.git",
+                "reference": "275b107593a4837cb7e52534441f62a2139196b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lostphilosopher/mongolab-lite-utils/zipball/275b107593a4837cb7e52534441f62a2139196b3",
+                "reference": "275b107593a4837cb7e52534441f62a2139196b3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MongolabLiteUtils": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "lostphilosopher",
+                    "email": "wandersen02@gmail.com"
+                }
+            ],
+            "description": "MongolabLiteUtils provides convenient wrapper methods for connecting to and using a mongolab database.",
+            "time": "2015-01-03 23:09:33"
         },
         {
             "name": "monolog/monolog",
@@ -1700,9 +1675,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "lostphilosopher/mongolab-lite-utils": 20
+    },
     "platform": {
         "ext-mongo": "*"
     },

@@ -122,10 +122,6 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
 
-        # jenssegers/laravel-mongodb
-        # https://github.com/jenssegers/laravel-mongodb
-        'Jenssegers\Mongodb\MongodbServiceProvider',
-
 	),
 
 	/*

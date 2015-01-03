@@ -7,7 +7,7 @@
 	"require": {
 		"ext-mongo": "*",
 		"laravel/framework": "4.2.*",
-		"jenssegers/mongodb": "*"
+		"lostphilosopher/mongolab-lite-utils": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
