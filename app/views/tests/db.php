@@ -3,7 +3,7 @@
 <ul>
 <?php
 	foreach ($views as $view) {
-		var_dump($view);
+		die(var_dump($view));
 		echo '<li>' . $view->ip . '</li>';
 	}
 ?>
