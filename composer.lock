@@ -356,12 +356,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lostphilosopher/mongolab-lite-utils.git",
-                "reference": "275b107593a4837cb7e52534441f62a2139196b3"
+                "reference": "dd7c25af511ff541ad01294de928cf880641a7bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lostphilosopher/mongolab-lite-utils/zipball/275b107593a4837cb7e52534441f62a2139196b3",
-                "reference": "275b107593a4837cb7e52534441f62a2139196b3",
+                "url": "https://api.github.com/repos/lostphilosopher/mongolab-lite-utils/zipball/dd7c25af511ff541ad01294de928cf880641a7bf",
+                "reference": "dd7c25af511ff541ad01294de928cf880641a7bf",
                 "shasum": ""
             },
             "require": {
@@ -381,7 +381,7 @@
                 }
             ],
             "description": "MongolabLiteUtils provides convenient wrapper methods for connecting to and using a mongolab database.",
-            "time": "2015-01-03 23:09:33"
+            "time": "2015-01-03 23:53:11"
         },
         {
             "name": "monolog/monolog",

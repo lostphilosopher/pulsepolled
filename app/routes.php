@@ -1,5 +1,7 @@
 <?php
 
+use \lostphilosopher\MongolabLiteUtils;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -21,6 +23,7 @@ Route::get('test/{feature?}', function($feature = 'db')
     switch ($feature) {
         case 'db':
 
+        	/*
 	        // Get the mongoDB name from env (heroku config)
 		    // SOURCE: https://gist.github.com/pedro/1288447
 	        // @todo: Use https://github.com/jenssegers/laravel-mongodb or altenative
@@ -38,6 +41,14 @@ Route::get('test/{feature?}', function($feature = 'db')
 
 		    // Close / Disconnect the MongoDB connection
 		    $mongo->close();
+			*/
+
+		    $visit = array('ip' => $_SERVER['HTTP_X_FORWARDED_FOR']);
+
+		    $mongo = new MongolabLiteUtils(getenv('MONGOLAB_URI'));
+			$access = $mongo->getCollection('access');		    
+			$access->insert($visit);
+			$views = $access->find();
 
             return View::make('tests.db', array('views' => $views));
 
