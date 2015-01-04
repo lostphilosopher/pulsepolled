@@ -1,6 +1,6 @@
 <?php
 
-use MongolabLiteUtils;
+use MongolabLiteUtils\MongolabLiteUtils;
 
 /*
 |--------------------------------------------------------------------------
