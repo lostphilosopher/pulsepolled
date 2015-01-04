@@ -1,6 +1,6 @@
 <?php
 
-use \lostphilosopher\MongolabLiteUtils;
+use lostphilosopher\MongolabLiteUtils;
 
 /*
 |--------------------------------------------------------------------------
