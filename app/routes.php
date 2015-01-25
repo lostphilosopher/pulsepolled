@@ -50,6 +50,7 @@ Route::get('test/{feature?}', function($feature = 'db')
 			$access->insert($visit);
 			$views = $access->find();
 
+			$views = array('a', 'b', 'c');
             return View::make('tests.db', array('views' => $views));
 
             break;
